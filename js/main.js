@@ -1,8 +1,8 @@
 /**
  * =========================================================================
- * MAIN APPLICATION SCRIPT
- * Renders portfolio data dynamically, handles UI interactions, animations,
- * theme changes, modals, and spotlight effects.
+ * MAIN APPLICATION SCRIPT - HO DUC NHAN PORTFOLIO
+ * Dynamic rendering, filterable case studies, modal viewers, mouse spotlight,
+ * interactive CV opening, and contact links.
  * =========================================================================
  */
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSkills();
   renderProjects();
   renderCredentials();
-  renderCommunity();
+  renderCommunityAndAwards();
   initGlowSpotlight();
   initScrollEffects();
   initNavigation();
@@ -59,10 +59,8 @@ function renderHeroAndMeta() {
   const data = PORTFOLIO_DATA.personal;
   const socials = PORTFOLIO_DATA.socials;
 
-  // Title tag & meta
-  document.title = `${data.fullName} - ${data.title} | Portfolio`;
+  document.title = `${data.fullName} - ${data.title} | UEH Portfolio`;
 
-  // Hero text
   const overline = document.getElementById("hero-overline");
   if (overline) overline.textContent = data.tagline;
 
@@ -78,15 +76,18 @@ function renderHeroAndMeta() {
   const locationText = document.getElementById("hero-location-text");
   if (locationText) locationText.textContent = data.location;
 
-  // Social links
-  const githubLink = document.getElementById("social-github");
-  if (githubLink) githubLink.href = socials.github;
-
-  const linkedinLink = document.getElementById("social-linkedin");
-  if (linkedinLink) linkedinLink.href = socials.linkedin;
-
+  // Social & CV links
   const emailLink = document.getElementById("social-email");
   if (emailLink) emailLink.href = `mailto:${socials.email}`;
+
+  const phoneLink = document.getElementById("social-phone");
+  if (phoneLink) phoneLink.href = `tel:${socials.phone.replace(/\s+/g, '')}`;
+
+  const cvLinks = document.querySelectorAll(".cv-download-link");
+  cvLinks.forEach(link => {
+    link.href = data.resumeUrl;
+    link.setAttribute("target", "_blank");
+  });
 
   // Focus Cards List
   const focusContainer = document.getElementById("focus-list-container");
@@ -124,7 +125,7 @@ function renderQuickStrip() {
 }
 
 /* -------------------------------------------------------------------------
-   4. Journey / Academic Roadmap
+   4. Journey / Academic & Career Roadmap
    ------------------------------------------------------------------------- */
 function renderJourney() {
   const journeyContainer = document.getElementById("journey-steps-container");
@@ -157,7 +158,7 @@ function renderJourney() {
 }
 
 /* -------------------------------------------------------------------------
-   5. Experience Rendering
+   5. Work Experience Rendering
    ------------------------------------------------------------------------- */
 function renderExperience() {
   const tabsContainer = document.getElementById("experience-tabs-container");
@@ -168,13 +169,12 @@ function renderExperience() {
   tabsContainer.innerHTML = PORTFOLIO_DATA.experiences.map((exp, idx) => `
     <button type="button" class="experience-tab ${idx === 0 ? 'is-active' : ''}" data-exp-id="${exp.id}">
       <div class="experience-logo">
-        <img src="${exp.logo}" alt="${exp.company}" onerror="this.src='assets/icons/netcompany.svg'" />
+        <img src="${exp.logo}" alt="${exp.company}" onerror="this.style.display='none'" />
       </div>
-      <span>${exp.company}</span>
+      <span>${exp.company.split(' ')[0]}</span>
     </button>
   `).join("");
 
-  // Function to render active card
   function displayExperienceCard(exp) {
     cardContainer.innerHTML = `
       <div class="experience-card" data-glow-card="true">
@@ -208,7 +208,6 @@ function renderExperience() {
 
   displayExperienceCard(PORTFOLIO_DATA.experiences[0]);
 
-  // Tab click listeners
   tabsContainer.querySelectorAll(".experience-tab").forEach(tab => {
     tab.addEventListener("click", () => {
       tabsContainer.querySelectorAll(".experience-tab").forEach(t => t.classList.remove("is-active"));
@@ -246,7 +245,7 @@ function renderSkills() {
 }
 
 /* -------------------------------------------------------------------------
-   7. Projects Showcase
+   7. Projects & Research Showcase
    ------------------------------------------------------------------------- */
 function renderProjects(filter = "all") {
   const projectList = document.getElementById("projects-list-container");
@@ -282,21 +281,9 @@ function renderProjects(filter = "all") {
           ${p.techStack.map(t => `<span>${t}</span>`).join("")}
         </div>
         <div class="project-actions">
-          ${p.githubUrl ? `
-            <a href="${p.githubUrl}" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-              Source code
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
-            </a>
-          ` : `
-            <span class="private-project">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-              Private repository
-            </span>
-          `}
           ${p.liveUrl ? `
-            <a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan);">
-              Live experience
+            <a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); display: inline-flex; align-items: center; gap: 8px;">
+              ${p.liveText || "View Details"}
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
           ` : ''}
@@ -305,7 +292,6 @@ function renderProjects(filter = "all") {
     </article>
   `).join("");
 
-  // Setup filter button listeners
   const filterBtns = document.querySelectorAll(".project-filters .filter-btn");
   filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -317,7 +303,7 @@ function renderProjects(filter = "all") {
 }
 
 /* -------------------------------------------------------------------------
-   8. Credentials & Achievements
+   8. Credentials & Certifications
    ------------------------------------------------------------------------- */
 function renderCredentials() {
   const certContainer = document.getElementById("certificates-list-container");
@@ -371,9 +357,9 @@ function renderCredentials() {
 }
 
 /* -------------------------------------------------------------------------
-   9. Community & Stats
+   9. Community & Academic Honors
    ------------------------------------------------------------------------- */
-function renderCommunity() {
+function renderCommunityAndAwards() {
   const container = document.getElementById("community-grid-container");
   if (!container) return;
 
@@ -381,19 +367,19 @@ function renderCommunity() {
     <article class="community-card" data-glow-card="true">
       <div class="community-header">
         <div class="community-badge-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/></svg>
         </div>
         <div>
-          <h3>Google Developer Group</h3>
-          <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem;">GDG HCMC Community Member</p>
+          <h3>European FIBAA Student Representative</h3>
+          <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem;">UEH International Finance Program</p>
         </div>
       </div>
       <p style="color: var(--text-secondary); line-height: 1.6;">
-        Active member engaged in technology seminars, Google Cloud workshops, AI developer sessions, and collaborative open source projects.
+        Selected as the official student representative for the European FIBAA Quality Accreditation evaluation review, representing academic excellence, curriculum standards, and student governance.
       </p>
       <div>
-        <a href="https://gdg.community.dev/" target="_blank" rel="noopener noreferrer" class="portfolio-button portfolio-button-secondary" style="font-size: 0.85rem; padding: 10px 18px;">
-          View GDG Profile <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        <a href="assets/HoDucNhan_CV.pdf" target="_blank" rel="noopener noreferrer" class="portfolio-button portfolio-button-secondary" style="font-size: 0.85rem; padding: 10px 18px;">
+          View Academic Profile <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
         </a>
       </div>
     </article>
@@ -401,22 +387,19 @@ function renderCommunity() {
     <article class="community-card" data-glow-card="true">
       <div class="community-header">
         <div class="community-badge-icon" style="color: #f59e0b; background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.3);">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
         </div>
         <div>
-          <h3>Developer Activity &amp; Coding</h3>
-          <p style="color: #f59e0b; font-family: var(--font-mono); font-size: 0.85rem;">LeetCode &amp; GitHub Contributions</p>
+          <h3>Academic Competitions &amp; Scholarships</h3>
+          <p style="color: #f59e0b; font-family: var(--font-mono); font-size: 0.85rem;">UEH &amp; National Honors</p>
         </div>
       </div>
       <p style="color: var(--text-secondary); line-height: 1.6;">
-        Consistent coding habit across algorithmic problem solving and open-source contributions.
+        Consistent achievement across 3 consecutive years of Merit Scholarships, 1st Prize SRAA 2025, Macroeconomics Challenge, Debate Competitions, and E-Banker.
       </p>
       <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-        <a href="${PORTFOLIO_DATA.socials.github}" target="_blank" rel="noopener noreferrer" class="portfolio-button portfolio-button-secondary" style="font-size: 0.85rem; padding: 10px 18px;">
-          GitHub Activity <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
-        </a>
-        <a href="${PORTFOLIO_DATA.socials.leetcode}" target="_blank" rel="noopener noreferrer" class="portfolio-button portfolio-button-secondary" style="font-size: 0.85rem; padding: 10px 18px;">
-          LeetCode Profile <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        <a href="assets/HoDucNhan_CV.pdf" target="_blank" rel="noopener noreferrer" class="portfolio-button portfolio-button-secondary" style="font-size: 0.85rem; padding: 10px 18px;">
+          Download Full CV PDF <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
         </a>
       </div>
     </article>
@@ -448,14 +431,12 @@ function initScrollEffects() {
   const navLinks = document.querySelectorAll(".desktop-nav a, .mobile-menu nav a");
 
   window.addEventListener("scroll", () => {
-    // Progress Bar
     const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = totalHeight > 0 ? window.scrollY / totalHeight : 0;
     if (progressBar) {
       progressBar.style.transform = `scaleX(${progress})`;
     }
 
-    // ScrollSpy
     let currentId = "";
     sections.forEach(section => {
       const sectionTop = section.offsetTop - 120;
@@ -539,7 +520,7 @@ function openCertModal(cert) {
         </div>
       </div>
       <a href="${cert.credentialUrl}" target="_blank" rel="noopener noreferrer" class="portfolio-button portfolio-button-primary" style="font-size: 0.85rem; padding: 10px 18px;">
-        Verify Credential <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        Open Official Document <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
       </a>
     </div>
   `;
@@ -557,6 +538,11 @@ function openAchievementModal(ach) {
     <div style="padding: 20px; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
       <p style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 8px;">${ach.organization} • ${ach.year}</p>
       <p style="color: var(--text-secondary); line-height: 1.6; font-size: 1rem;">${ach.description}</p>
+      <div style="margin-top: 16px;">
+        <a href="assets/HoDucNhan_CV.pdf" target="_blank" class="portfolio-button portfolio-button-secondary" style="font-size: 0.82rem; padding: 8px 16px;">
+          View in Full CV PDF
+        </a>
+      </div>
     </div>
   `;
   backdrop.classList.add("is-active");
@@ -579,21 +565,27 @@ function initContact() {
         return;
       }
 
-      // Open mailto fallback
-      const mailtoUrl = `mailto:${PORTFOLIO_DATA.socials.email}?subject=${encodeURIComponent(`[Portfolio Contact] Message from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+      const mailtoUrl = `mailto:${PORTFOLIO_DATA.personal.email}?subject=${encodeURIComponent(`[Recruitment / Inquiry] Message from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
       window.location.href = mailtoUrl;
 
-      showToast("Message client opened! Thank you.");
+      showToast("Email client opened! Thank you.");
       form.reset();
     });
   }
 
-  // Copy email listener
-  const copyBtn = document.getElementById("copy-email-btn");
-  if (copyBtn) {
-    copyBtn.addEventListener("click", () => {
-      navigator.clipboard.writeText(PORTFOLIO_DATA.socials.email);
-      showToast(`Copied ${PORTFOLIO_DATA.socials.email} to clipboard!`);
+  const copyEmailBtn = document.getElementById("copy-email-btn");
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(PORTFOLIO_DATA.personal.email);
+      showToast(`Copied ${PORTFOLIO_DATA.personal.email} to clipboard!`);
+    });
+  }
+
+  const copyPhoneBtn = document.getElementById("copy-phone-btn");
+  if (copyPhoneBtn) {
+    copyPhoneBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(PORTFOLIO_DATA.personal.phone);
+      showToast(`Copied ${PORTFOLIO_DATA.personal.phone} to clipboard!`);
     });
   }
 }
@@ -612,9 +604,6 @@ function showToast(message) {
   }, 3000);
 }
 
-/* -------------------------------------------------------------------------
-   Icon Helper (Lucide SVGs)
-   ------------------------------------------------------------------------- */
 function getSvgIcon(name) {
   const icons = {
     "server-cog": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M4.5 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-.5"/><path d="M4.5 14H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-.5"/><path d="M6 6h.01"/><path d="M6 18h.01"/><path d="m15.7 13.4-.9-.3"/><path d="m9.2 10.9-.9-.3"/><path d="m10.6 15.7.3-.9"/><path d="m13.6 15.7-.4-1"/><path d="m10.8 9.3-.4-1"/><path d="m8.3 13.6 1-.4"/><path d="m14.7 10.8 1-.4"/><path d="m13.4 8.3-.3.9"/></svg>`,

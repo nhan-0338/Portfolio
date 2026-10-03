@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vcb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062e22"/>
+      <stop offset="50%" stop-color="#094a37"/>
+      <stop offset="100%" stop-color="#031f17"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#vcb-bg)"/>
+
+  <!-- Bank & Credit Evaluation Icon -->
+  <g transform="translate(400, 190)">
+    <circle cx="0" cy="0" r="75" fill="#065f46" fill-opacity="0.3" stroke="#34d399" stroke-width="2"/>
+    <!-- Bank Pillar Icon -->
+    <polygon points="0,-40 -40,-15 40,-15" fill="#34d399"/>
+    <rect x="-35" y="-10" width="10" height="40" fill="#a7f3d0"/>
+    <rect x="-12" y="-10" width="10" height="40" fill="#a7f3d0"/>
+    <rect x="10" y="-10" width="10" height="40" fill="#a7f3d0"/>
+    <rect x="25" y="-10" width="10" height="40" fill="#a7f3d0"/>
+    <rect x="-42" y="30" width="84" height="10" rx="3" fill="#34d399"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="400" y="350" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">
+    CREDIT ASSESSMENT &amp; BORROWER EVALUATION
+  </text>
+  <text x="400" y="385" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="500" fill="#34d399" text-anchor="middle">
+    Vietcombank · Do Thanh Transaction Office
+  </text>
+  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#94a3b8" text-anchor="middle">
+    Financial Statement Review · Debt Capacity Modeling · Best Intern Q3/2024 Honor
+  </text>
+
+  <!-- Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="180" height="30" rx="15" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="18" cy="15" r="5" fill="#34d399"/>
+    <text x="32" y="20" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#d1fae5" font-weight="700">VIETCOMBANK CREDIT</text>
+  </g>
+</svg>

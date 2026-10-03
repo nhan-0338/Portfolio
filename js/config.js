@@ -1,63 +1,69 @@
 /**
  * =========================================================================
- * PORTFOLIO CONFIGURATION DATA
- * Chỉnh sửa toàn bộ thông tin cá nhân, dự án, kỹ năng, kinh nghiệm tại đây.
- * Mọi thay đổi trong file này sẽ tự động cập nhật lên giao diện website.
+ * PORTFOLIO CONFIGURATION DATA - HO DUC NHAN
+ * Scanned & Tailored from Official Curriculum Vitae
+ * University of Economics Ho Chi Minh City (UEH) - International Finance
  * =========================================================================
  */
 
 const PORTFOLIO_DATA = {
   // 1. THÔNG TIN CÁ NHÂN (PERSONAL INFO)
   personal: {
-    fullName: "Nguyen Tan Thang",
-    shortName: "Thang",
-    title: "Software Engineer",
-    tagline: "Software Engineering · HCMUS",
-    headline: "Hi, I'm Nguyen Tan Thang.",
-    description: "I build reliable backend systems and modern digital products, with a focus on scalable APIs, cloud technologies, and thoughtful full-stack experiences.",
+    fullName: "HO DUC NHAN",
+    shortName: "Duc Nhan",
+    title: "Finance & Operations Planning Specialist",
+    tagline: "International Finance · UEH · GPA 3.8/4.0",
+    headline: "Hi, I'm HO DUC NHAN.",
+    description: "Seeking a finance-related position with a clear long-term direction toward operations planning and corporate financial management. I value financial accuracy, control, and reliable reporting as essential foundations for effective planning and analysis.",
     location: "Ho Chi Minh City, Vietnam",
-    university: "HCMUS (VNU-HCM University of Science)",
-    academicStatus: "Software Engineering student",
-    graduationYear: "Expected 2027",
-    focusAreas: ["Backend systems", "Cloud delivery", "Full-stack products"],
+    phone: "0338 114 890",
+    email: "hoducnhan240905@gmail.com",
+    university: "University of Economics Ho Chi Minh City (UEH)",
+    major: "Bachelor of International Finance",
+    gpa: "3.8 / 4.0",
+    academicStatus: "Undergraduate Student · UEH International Finance",
+    graduationYear: "Graduation in March 2027",
+    focusAreas: ["Corporate Financial Management", "Operations Planning", "Internal Control & Audit", "Financial Analytics"],
     availableForHire: true,
-    avatarUrl: "assets/images/personal.jpg", // Thay bằng ảnh chân dung của bạn
-    resumeUrl: "assets/NguyenTanThang_Resume.pdf", // Link hoặc đường dẫn file CV của bạn
+    avatarUrl: "assets/images/personal.jpg",
+    resumeUrl: "assets/HoDucNhan_CV.pdf", // Link mở trực tiếp file CV PDF
     profileJson: {
-      name: "Nguyen Tan Thang",
-      role: "Software Engineer",
-      focus: ["Backend", "Cloud"],
+      name: "HO DUC NHAN",
+      role: "Finance & Operations Planning",
+      university: "UEH",
+      gpa: "3.8 / 4.0",
+      ielts: "7.5 Overall",
+      acca: "F1-F3 Exempted, F7 Prep",
+      focus: ["Corporate Finance", "Internal Control", "Financial Modeling"],
       available: true
     }
   },
 
   // 2. LIÊN HỆ & MẠNG XÃ HỘI (SOCIAL LINKS)
   socials: {
-    github: "https://github.com/thangak18",
-    linkedin: "https://www.linkedin.com/in/th%E1%BA%AFng-nguy%E1%BB%85n-598741283/",
-    email: "thangak18@gmail.com",
-    facebook: "https://www.facebook.com/nguyen.thang.739214/",
-    instagram: "https://www.instagram.com/thang23.25/",
-    leetcode: "https://leetcode.com/u/thangnguyen23/",
-    gdg: "https://gdg.community.dev/"
+    email: "hoducnhan240905@gmail.com",
+    phone: "0338 114 890",
+    linkedin: "https://www.linkedin.com/",
+    github: "https://github.com/",
+    cvPdf: "assets/HoDucNhan_CV.pdf"
   },
 
-  // 3. ĐIỂM NHẤN TRỌNG TÂM (CORE FOCUS ITEMS)
+  // 3. ĐIỂM NHẤN TRỌNG TÂM (CORE FOCUS HIGHLIGHTS)
   focusHighlights: [
     {
       icon: "server-cog",
-      title: "Backend systems",
-      description: "Reliable APIs, clear domain logic, and maintainable service architecture."
+      title: "Financial Analysis & Planning",
+      description: "Financial statement analysis, budgeting, multi-scenario forecasting, and data-driven decision support."
     },
     {
       icon: "cloud",
-      title: "Cloud delivery",
-      description: "Containerized applications and practical deployment workflows."
+      title: "Internal Control & Audit",
+      description: "Transaction verification, inventory reconciliation across 25+ retail stores, and root-cause remediation."
     },
     {
       icon: "layers-3",
-      title: "Full-stack products",
-      description: "Cohesive experiences from data model to responsive interface."
+      title: "Business Intelligence & BI",
+      description: "Automated Power BI reporting dashboards, Stata econometric research, and Python financial analysis."
     }
   ],
 
@@ -65,57 +71,57 @@ const PORTFOLIO_DATA = {
   quickStats: [
     {
       icon: "graduation-cap",
-      label: "Current",
-      value: "Software Engineering student"
+      label: "Education",
+      value: "Bachelor of International Finance · UEH"
     },
     {
       icon: "book-open",
-      label: "University",
-      value: "HCMUS"
+      label: "Academic GPA",
+      value: "3.8 / 4.0 (Top Academic Honor)"
     },
     {
       icon: "server-cog",
-      label: "Focus",
-      value: "Backend & cloud systems"
+      label: "Qualifications",
+      value: "IELTS 7.5 · ACCA Candidate (F1-F3, F7)"
     },
     {
       icon: "briefcase",
       label: "Graduation",
-      value: "Expected 2027"
+      value: "March 2027"
     }
   ],
 
-  // 5. LỘ TRÌNH HỌC TẬP & PHÁT TRIỂN (JOURNEY TIMELINE)
+  // 5. LỘ TRÌNH HỌC TẬP & SỰ NGHIỆP (JOURNEY TIMELINE)
   journey: [
     {
       step: "01",
-      badge: "Foundation",
-      title: "Programming & data structures",
-      description: "Core engineering thinking and problem solving fundamentals.",
-      status: "completed", // "completed", "current", "upcoming"
+      badge: "Foundation & Honors",
+      title: "UEH International Finance",
+      description: "Built strong quantitative foundations in finance, macroeconomic modeling, and accounting. Awarded Excellent Scholarships 3 consecutive years (2024-2026).",
+      status: "completed",
       icon: "check"
     },
     {
       step: "02",
-      badge: "Applied systems",
-      title: "Backend & full-stack projects",
-      description: "From database and API design to usable production experiences.",
+      badge: "Banking Experience",
+      title: "Vietcombank · Credit Assessment",
+      description: "Evaluated borrower repayment capacities, reviewed credit documentation, and earned 'Best Intern Honor' in Q3/2024.",
       status: "completed",
       icon: "check"
     },
     {
       step: "03",
-      badge: "Now",
-      title: "Semester 7 of 12",
-      description: "Deepening cloud infrastructure, deployment, and distributed system design.",
+      badge: "Corporate Audit & Control",
+      title: "Hesman Group · Internal Control",
+      description: "Reconciling 500+ daily transactions and auditing inventory across 25 southern retail stores (ShopDunk, Samcenter, Xiaomi).",
       status: "current",
       icon: "sparkles"
     },
     {
       step: "04",
-      badge: "Next milestone",
-      title: "Graduate in 2027",
-      description: "Ready to deliver high impact on ambitious engineering teams.",
+      badge: "Next Milestone",
+      title: "European FIBAA Review & Graduation 2027",
+      description: "Selected as UEH Student Representative for European FIBAA Accreditation. Ready to contribute to corporate finance and operations planning.",
       status: "upcoming",
       icon: "graduation-cap"
     }
@@ -124,209 +130,298 @@ const PORTFOLIO_DATA = {
   // 6. KINH NGHIỆM LÀM VIỆC (WORK EXPERIENCE)
   experiences: [
     {
-      id: "netcompany",
-      company: "Netcompany",
-      role: "IT Accelerator Intern",
-      period: "Jul 2026 – Present",
-      location: "Ho Chi Minh City (On-site)",
-      logo: "assets/icons/netcompany.svg",
-      summary: "Participating in enterprise software development and core operational solutions within an Agile delivery framework.",
+      id: "hesman",
+      company: "Hesman Group Joint Stock Company",
+      role: "Internal Control Intern - Audit and Reconciliation",
+      period: "October 2025 – June 2026",
+      location: "Southern branch (Ho Chi Minh City)",
+      logo: "assets/icons/hesman-logo.svg",
+      summary: "Responsible for transaction data auditing, multi-store inventory control, and operational exception remediation across nationwide retail chains.",
       bullets: [
-        "Participating in the development of the After Dark Management Application (ADMA), a back-office financial and operational hub for managing corporate social initiatives.",
-        "Engaging in a full software development lifecycle within an Agile environment, taking part in architecture design, database modeling, and MVP implementation.",
-        "Building scalable backend workflows for budget forecasting, event operations, expense tracking, and dynamic approval processes to streamline internal management."
+        "Reviewed and validated 500+ transaction records per day by cross-checking system data against supporting documents, tracing unusual items and control exceptions to source records, and verifying data completeness and accuracy to strengthen the reliability of financial and operational information.",
+        "Performed inventory audit and reconciliation across 3 major retail chains — ShopDunk (Apple Authorized Reseller), Samcenter (Samsung Experience Store), Xiaomi — and 25 southern stores, reconciling system-recorded balances with physical stock counts, investigating discrepancies, identifying root causes, and implementing corrective adjustments.",
+        "Tracked, documented, and followed up on 50+ internal control exceptions per month, coordinating with store managers and finance departments to clarify findings, determine corrective actions, monitor remediation progress, and ensure resolution within reporting deadlines."
       ],
-      tags: ["Agile", "Architecture Design", "Database Modeling", "Backend Workflows", "MVP", "Java / Spring"]
+      tags: ["Internal Control", "Audit & Reconciliation", "ShopDunk / Samcenter / Xiaomi", "Inventory Auditing", "Variance Analysis", "Data Reliability"]
+    },
+    {
+      id: "vietcombank",
+      company: "Vietcombank (Joint Stock Commercial Bank for Foreign Trade of Vietnam)",
+      role: "Customer Relationship Intern - Credit Assessment Support",
+      period: "September 2024 – December 2024",
+      location: "Do Thanh Transaction Office | Ho Chi Minh City",
+      logo: "assets/icons/vietcombank-logo.svg",
+      summary: "Supported credit appraisal, financial statement analysis, and customer file evaluation for individual and commercial borrowers.",
+      bullets: [
+        "Received practical experience in reviewing financial statements, analyzing cash flows, evaluating borrower repayment capacity, and understanding key credit scoring factors.",
+        "Supported the review and completion of customer and credit documentation, verifying information completeness, legal validity, and following up on outstanding records prior to internal risk appraisal.",
+        "Monitored the progress of assigned customer files, coordinated with Relationship Managers and risk officers, ensuring timely submission for loan approval.",
+        "Awarded the Highest Honor of 'Best Intern in the Third Quarter of 2024' for outstanding diligence and accuracy."
+      ],
+      tags: ["Credit Assessment", "Financial Statement Analysis", "Debt Capacity Evaluation", "Risk Appraisal", "Banking Operations", "Best Intern Award"]
     }
   ],
 
-  // 7. KỸ NĂNG & CÔNG NGHỆ (CAPABILITIES & SKILLS)
+  // 7. KỸ NĂNG & CÔNG CỤ (SKILLS & TOOLS MATRIX)
   skillCategories: [
     {
       number: "01",
-      title: "Languages",
-      icon: "code-xml",
+      title: "Financial Analysis & Accounting",
+      icon: "server-cog",
       skills: [
-        { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
-        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-        { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
-        { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
-        { name: "HTML / CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
-        { name: "C / C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
-        { name: "C# / .NET", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" }
+        { name: "Financial Statement Analysis", icon: null },
+        { name: "Financial Reporting Fundamentals", icon: null },
+        { name: "Budgeting & Forecasting", icon: null },
+        { name: "Financial Modeling", icon: null },
+        { name: "Variance Investigation", icon: null },
+        { name: "Macro-market Analysis", icon: null }
       ]
     },
     {
       number: "02",
-      title: "Frameworks",
+      title: "Internal Control & Audit",
       icon: "layers-3",
       skills: [
-        { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" },
-        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-        { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
-        { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
-        { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
-        { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" }
+        { name: "Transaction Review (500+/day)", icon: null },
+        { name: "Data Reconciliation", icon: null },
+        { name: "Multi-store Inventory Audit", icon: null },
+        { name: "Control Exception Tracking", icon: null },
+        { name: "Root-Cause Analysis", icon: null },
+        { name: "Audit Remediation Follow-up", icon: null }
       ]
     },
     {
       number: "03",
-      title: "Cloud & Infrastructure",
+      title: "Tools, BI & Statistical Software",
       icon: "cloud",
       skills: [
-        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
-        { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-        { name: "Google Cloud", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" },
-        { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" },
-        { name: "Nginx", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" },
-        { name: "CI / CD", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" },
-        { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" }
+        { name: "Microsoft Power BI", icon: null },
+        { name: "Microsoft Excel (MOS Certified)", icon: null },
+        { name: "Stata 17 Econometrics", icon: null },
+        { name: "Python for Data Analysis", icon: null },
+        { name: "Google Workspace", icon: null },
+        { name: "AI Prompting (ChatGPT / Claude)", icon: null }
       ]
     },
     {
       number: "04",
-      title: "Data & Workflow",
-      icon: "server-cog",
+      title: "Languages & Communication",
+      icon: "code-xml",
       skills: [
-        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
-        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
-        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
-        { name: "Git / GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
-        { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
-        { name: "REST APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" },
-        { name: "AI Tools", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openai/openai-original.svg" }
+        { name: "English (IELTS 7.5 Overall)", icon: null },
+        { name: "Vietnamese (Native)", icon: null },
+        { name: "Analytical & Report Writing", icon: null },
+        { name: "Stakeholder Communication", icon: null },
+        { name: "Cross-functional Coordination", icon: null },
+        { name: "Executive Presentation", icon: null }
       ]
     }
   ],
 
-  // 8. DỰ ÁN NỔI BẬT (SELECTED PROJECTS)
+  // 8. DỰ ÁN & NGHIÊN CỨU TIÊU BIỂU (PROJECTS & RESEARCH CASE STUDIES)
   projects: [
     {
-      id: "threatlens",
+      id: "sraa-research",
       featured: true,
       index: "01",
-      title: "ThreatLens",
-      categoryBadge: "Data",
-      categorySub: "Security intelligence platform",
-      categoryFilter: "security",
-      description: "A threat intelligence and vulnerability management platform that turns security signals into clear, actionable risk insights.",
-      image: "assets/images/threatlens.jpg",
+      title: "Unmasking Earnings Management in the Digital Era",
+      categoryBadge: "Research Award",
+      categorySub: "First Prize (A Award) · SRAA 2025",
+      categoryFilter: "research",
+      description: "Scientific research examining how Accounting Conservatism shapes corporate financial behavior and earnings management quality across enterprises in Ho Chi Minh City.",
+      image: "assets/images/research-sraa.jpg",
       highlights: [
-        "Real-time threat detection and automated telemetry parsing",
-        "Vulnerability assessment, CVE mapping, and automated reporting",
-        "Security risk analytics dashboard with interactive metrics"
+        "Won First Prize (A Award) at the 7th Scientific Research Award in Accounting & Auditing (SRAA 2025)",
+        "Applied econometric models and regression analysis using Stata 17 to analyze large-scale corporate financial data",
+        "Formulated empirical insights on earnings management constraints under digital transformation and corporate governance frameworks"
       ],
-      techStack: ["Python", "React", "Node.js", "MongoDB", "Docker"],
-      githubUrl: "https://github.com/thtcsec/ThreatLens",
-      liveUrl: null,
+      techStack: ["Stata 17", "Econometric Modeling", "Financial Data", "Accounting Conservatism", "SRAA 2025 First Prize"],
+      githubUrl: null,
+      liveUrl: "assets/HoDucNhan_CV.pdf",
+      liveText: "View Research Summary",
       isPrivate: false
     },
     {
-      id: "eduvault",
+      id: "hesman-audit-case",
       featured: true,
       index: "02",
-      title: "EduVault",
-      categoryBadge: "Software",
-      categorySub: "Cloud learning platform",
-      categoryFilter: "backend",
-      description: "A scalable online learning platform connecting a Spring Boot API with a modern Next.js experience and a cloud-ready deployment workflow.",
-      image: "assets/images/eduvault.jpg",
+      title: "Multi-Store Inventory Audit & Internal Control System",
+      categoryBadge: "Operations",
+      categorySub: "Retail Operations & Reconciliation",
+      categoryFilter: "audit",
+      description: "Comprehensive audit and internal control workflow deployed across 25 southern retail stores for ShopDunk, Samcenter, and Xiaomi chains under Hesman Group.",
+      image: "assets/images/hesman-audit.jpg",
       highlights: [
-        "Spring Boot and Next.js integration with secure JWT authentication",
-        "Containerized multi-service development environment using Docker",
-        "Fully deployed and autoscaled on AWS & Google Cloud Run"
+        "Daily automated validation of 500+ transaction records against source bank slips and invoices",
+        "Multi-retail inventory reconciliation: investigated variances between ERP balances and physical warehouse counts",
+        "Streamlined monthly resolution of 50+ internal control exceptions with store managers and finance teams"
       ],
-      techStack: ["Spring Boot", "Next.js", "PostgreSQL", "Docker", "AWS", "Google Cloud"],
+      techStack: ["Internal Control", "ERP Inventory Audit", "Transaction Reconciliation", "Variance Remediation", "Hesman Group"],
       githubUrl: null,
-      liveUrl: "https://eduvault-frontend-159888619461.asia-southeast1.run.app/",
-      isPrivate: true
+      liveUrl: "assets/HoDucNhan_CV.pdf",
+      liveText: "View Case Experience",
+      isPrivate: false
     },
     {
-      id: "online-auction",
+      id: "vietcombank-credit-case",
       featured: true,
       index: "03",
-      title: "Online Auction System",
-      categoryBadge: "Software",
-      categorySub: "Real-time commerce experience",
-      categoryFilter: "fullstack",
-      description: "A full-stack auction platform with real-time bidding, user and administrator workspaces, product management, and bidding history.",
-      image: "assets/images/auction.jpg",
+      title: "Credit Risk Appraisal & Borrower Evaluation Framework",
+      categoryBadge: "Banking",
+      categorySub: "Credit Analysis & Risk Assessment",
+      categoryFilter: "finance",
+      description: "Practical credit assessment methodology applied at Vietcombank Do Thanh to evaluate borrower repayment capacities, analyze financial statements, and structure loan documentation.",
+      image: "assets/images/vietcombank-credit.jpg",
       highlights: [
-        "Real-time bidding flow with WebSocket push notifications",
-        "Dedicated user bidding dashboard and secure admin control center",
-        "Payment-ready transactional architecture with relational data integrity"
+        "Analyzed balance sheets, cash flow statements, and debt service coverage ratios (DSCR) for creditworthiness",
+        "Conducted thorough compliance and legal checks on customer files prior to internal credit committee approvals",
+        "Recognized as 'Best Intern in the Third Quarter of 2024' at Vietcombank Do Thanh"
       ],
-      techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "Socket.IO"],
-      githubUrl: "https://github.com/hungtmh/online-auction-system",
-      liveUrl: null,
+      techStack: ["Credit Assessment", "Financial Statement Analysis", "Risk Scoring", "Vietcombank", "Best Intern Q3/2024"],
+      githubUrl: null,
+      liveUrl: "assets/HoDucNhan_CV.pdf",
+      liveText: "View Credit Experience",
+      isPrivate: false
+    },
+    {
+      id: "powerbi-financial-dashboard",
+      featured: true,
+      index: "04",
+      title: "Corporate Financial Performance & Budgeting Dashboard",
+      categoryBadge: "Business Intelligence",
+      categorySub: "Financial Modeling & BI",
+      categoryFilter: "bi",
+      description: "Interactive Power BI and Excel analytical dashboard designed for revenue forecasting, expense budgeting, variance tracking, and executive decision support.",
+      image: "assets/images/powerbi-dashboard.jpg",
+      highlights: [
+        "Integrated dynamic DAX measures for real-time KPI tracking, gross margin analysis, and EBITDA variance breakdown",
+        "Multi-scenario financial forecasting models comparing actual vs. budgeted operational costs",
+        "Automated data extraction and cleansing pipelines leveraging Python and Power Query"
+      ],
+      techStack: ["Microsoft Power BI", "Financial Modeling", "Budgeting & Forecasting", "Python", "MOS Excel"],
+      githubUrl: null,
+      liveUrl: "assets/HoDucNhan_CV.pdf",
+      liveText: "View BI Details",
       isPrivate: false
     }
   ],
 
-  // 9. CHỨNG CHỈ (CREDENTIALS & CERTIFICATIONS)
+  // 9. CHỨNG CHỈ & VĂN BẰNG (CREDENTIALS & CERTIFICATIONS)
   certifications: [
     {
       id: "c1",
-      title: "The Complete Full-Stack Web Development Bootcamp",
-      issuer: "Udemy",
-      year: "2025",
-      image: "assets/images/cert-webdev.jpg",
-      credentialUrl: "https://www.udemy.com/certificate/UC-complete-web-dev/",
-      skills: ["Full-Stack", "JavaScript", "Node.js", "React", "SQL"]
+      title: "IELTS Academic: 7.5 Overall Band Score",
+      issuer: "IDP / British Council",
+      year: "2024",
+      image: "assets/images/cert-ielts.jpg",
+      credentialUrl: "assets/HoDucNhan_CV.pdf",
+      skills: ["English Proficiency (C1 Level)", "Academic Writing", "Professional Communication"]
     },
     {
       id: "c2",
-      title: "Agentic Coding: Full-Stack Java Apps with Cursor and Copilot",
-      issuer: "Udemy",
-      year: "2026",
-      image: "assets/images/cert-java-ai.jpg",
-      credentialUrl: "https://www.udemy.com/certificate/UC-agentic-java/",
-      skills: ["Java", "Spring Boot", "Agentic Coding", "Copilot"]
+      title: "ACCA Certificate: F1, F2, F3 Exemptions & F7 Prep",
+      issuer: "ACCA Global",
+      year: "2025",
+      image: "assets/images/cert-acca.jpg",
+      credentialUrl: "assets/HoDucNhan_CV.pdf",
+      skills: ["Financial Reporting (F7)", "Management Accounting", "Business & Technology"]
     },
     {
       id: "c3",
-      title: "Gemini Certified Student",
-      issuer: "Google",
-      year: "2026",
-      image: "assets/images/cert-gemini.png",
-      credentialUrl: "https://cloud.google.com/certification",
-      skills: ["Gemini AI", "Prompt Engineering", "Cloud AI APIs"]
+      title: "First Prize (A Award) - 7th SRAA 2025",
+      issuer: "UEH Scientific Research Award",
+      year: "2025",
+      image: "assets/images/cert-sraa.jpg",
+      credentialUrl: "assets/HoDucNhan_CV.pdf",
+      skills: ["Accounting & Auditing Research", "Econometrics (Stata 17)", "Scientific Methodology"]
     }
   ],
 
-  // 10. THÀNH TÍCH (ACHIEVEMENTS)
+  // 10. THÀNH TÍCH & GIẢI THƯỞNG (HONORS & AWARDS)
   achievements: [
     {
       id: "a1",
       number: "01",
-      title: "Top 10 Datathon 2026",
-      organization: "GenCore Team (Member)",
-      year: "2026",
-      description: "Built an end-to-end data intelligence and risk modeling solution, competing with 100+ university teams nationwide."
+      title: "First Prize (A Award) - 7th Scientific Research Award in Accounting & Auditing (SRAA 2025)",
+      organization: "UEH School of Accounting",
+      year: "2025",
+      description: "Author of research topic: 'Unmasking Earnings Management in the Digital Era: How Accounting Conservatism Shapes Corporate Behavior in Ho Chi Minh City'."
     },
     {
       id: "a2",
       number: "02",
-      title: "LeetCode Milestone & Problem Solving",
-      organization: "LeetCode Community",
-      year: "2025 – 2026",
-      description: "Consistent problem solving in Data Structures & Algorithms with Java & Python."
+      title: "Selected UEH Student Representative for European FIBAA Quality Accreditation Review 2026",
+      organization: "FIBAA Accreditation Council & UEH",
+      year: "2026",
+      description: "Chosen as the official student representative for the Bachelor of International Finance program in the international European FIBAA accreditation evaluation."
+    },
+    {
+      id: "a3",
+      number: "03",
+      title: "Excellent Scholarship for Outstanding Academic & Extracurricular Performance (3 Consecutive Years)",
+      organization: "University of Economics Ho Chi Minh City (UEH)",
+      year: "2024, 2025, 2026",
+      description: "Awarded top merit scholarships for maintaining a 3.8/4.0 GPA and exceptional contributions to university academic competitions."
+    },
+    {
+      id: "a4",
+      number: "04",
+      title: "Highest Honor: Best Intern in the Third Quarter of 2024",
+      organization: "Vietcombank · Do Thanh Transaction Office",
+      year: "2024",
+      description: "Awarded Best Intern for outstanding performance and precision in credit assessment support and borrower file evaluations."
+    },
+    {
+      id: "a5",
+      number: "05",
+      title: "Second Prize at the 2025 Macroeconomics Challenge",
+      organization: "Academic Economics Association",
+      year: "2025",
+      description: "Demonstrated deep analytical capabilities in macroeconomic policy modeling and market indicators."
+    },
+    {
+      id: "a6",
+      number: "06",
+      title: "Second Prize at the 2025 UEH Economics Student Debate Competition",
+      organization: "UEH Student Union",
+      year: "2025",
+      description: "Debated financial regulations, fiscal policies, and corporate governance topics."
+    },
+    {
+      id: "a7",
+      number: "07",
+      title: "Third Prize at the 5th E-Banker Banking Academic Competition",
+      organization: "Banking University & Financial Institutions",
+      year: "2024",
+      description: "Solved comprehensive case studies in commercial banking operations, credit risk, and digital banking."
+    },
+    {
+      id: "a8",
+      number: "08",
+      title: "Third Prize at the 2024 Microeconomics Challenge",
+      organization: "UEH Economics Association",
+      year: "2024",
+      description: "Analyzed market mechanisms, cost structures, and corporate pricing behavior."
+    },
+    {
+      id: "a9",
+      number: "09",
+      title: "Third Prize at the 'UEH Pride' Writing Contest",
+      organization: "UEH Editorial Board",
+      year: "2023",
+      description: "Honored for excellence in analytical and expressive essay writing."
     }
   ],
 
-  // 11. CỘNG ĐỒNG (COMMUNITY)
-  community: {
-    gdg: {
-      name: "Google Developer Group - HCMC",
-      role: "Active Member",
-      description: "Active member focusing on Google technologies, collaborative learning, system architectures & modern developer practices.",
-      url: "https://gdg.community.dev/"
-    }
-  }
+  // 11. KHÓA HỌC NGOÀI & CHUYÊN MÔN (EXTERNAL COURSES)
+  externalCourses: [
+    "Financial Modeling & Business Valuation",
+    "Financial Statement Analysis & Disclosures",
+    "Macro-market Analysis & Monetary Policy",
+    "Microsoft Office Specialist (MOS) Expert"
+  ]
 };
 
-// Expose globally for both browser scripts and module imports
 if (typeof module !== "undefined" && module.exports) {
   module.exports = PORTFOLIO_DATA;
 }

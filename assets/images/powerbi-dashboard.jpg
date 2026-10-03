@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pbi-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1f06"/>
+      <stop offset="50%" stop-color="#423109"/>
+      <stop offset="100%" stop-color="#1c1404"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#pbi-bg)"/>
+
+  <!-- Power BI Bar & Chart Icon -->
+  <g transform="translate(400, 190)">
+    <circle cx="0" cy="0" r="75" fill="#f59e0b" fill-opacity="0.2" stroke="#fbbf24" stroke-width="2"/>
+    <rect x="-35" y="10" width="18" height="30" rx="4" fill="#fbbf24"/>
+    <rect x="-10" y="-10" width="18" height="50" rx="4" fill="#f59e0b"/>
+    <rect x="15" y="-35" width="18" height="75" rx="4" fill="#d97706"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="400" y="350" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">
+    CORPORATE FINANCIAL DASHBOARD &amp; MODELING
+  </text>
+  <text x="400" y="385" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="500" fill="#fbbf24" text-anchor="middle">
+    Power BI · Stata 17 · Python
+  </text>
+  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#94a3b8" text-anchor="middle">
+    Budgeting &amp; Forecasting · Financial Statement Visualization · Decision Support
+  </text>
+
+  <!-- Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="180" height="30" rx="15" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="18" cy="15" r="5" fill="#fbbf24"/>
+    <text x="32" y="20" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#fef3c7" font-weight="700">BUSINESS INTELLIGENCE</text>
+  </g>
+</svg>
