@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="50%" stop-color="#111c38"/>
+      <stop offset="100%" stop-color="#080c18"/>
+    </linearGradient>
+    <linearGradient id="p-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <radialGradient id="p-ambient" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="700" fill="url(#p-bg)"/>
+  <circle cx="300" cy="300" r="240" fill="url(#p-ambient)"/>
+
+  <!-- Geometric frame -->
+  <circle cx="300" cy="300" r="190" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="300" cy="300" r="180" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.6"/>
+
+  <!-- Stylized Developer Silhouette & Avatar -->
+  <g transform="translate(300, 310)">
+    <!-- Shoulders -->
+    <path d="M -130 180 C -130 90, -70 60, 0 60 C 70 60, 130 90, 130 180 Z" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <!-- Collar / Hoodie -->
+    <path d="M -50 65 L 0 110 L 50 65" fill="#0f172a" stroke="#00f2fe" stroke-width="2"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="-20" rx="65" ry="80" fill="#334155"/>
+    <!-- Hair -->
+    <path d="M -65 -35 C -65 -90, -30 -115, 0 -115 C 40 -115, 65 -90, 65 -35 C 50 -80, -20 -95, -65 -35 Z" fill="#0f172a"/>
+    <!-- Glasses / Visor glow -->
+    <rect x="-48" y="-30" width="40" height="24" rx="6" fill="#00f2fe" fill-opacity="0.2" stroke="#00f2fe" stroke-width="2"/>
+    <rect x="8" y="-30" width="40" height="24" rx="6" fill="#00f2fe" fill-opacity="0.2" stroke="#00f2fe" stroke-width="2"/>
+    <line x1="-8" y1="-18" x2="8" y2="-18" stroke="#00f2fe" stroke-width="2"/>
+  </g>
+
+  <!-- Tag overlay -->
+  <g transform="translate(300, 560)">
+    <rect x="-140" y="-22" width="280" height="44" rx="22" fill="#030712" fill-opacity="0.85" stroke="#00f2fe" stroke-width="1.5"/>
+    <text x="0" y="6" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="600" fill="#00f2fe" text-anchor="middle" letter-spacing="1">
+      &lt;NGUYEN TAN THANG /&gt;
+    </text>
+  </g>
+</svg>

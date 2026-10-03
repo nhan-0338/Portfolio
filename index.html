@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Nguyen Tan Thang - Software Engineer | Portfolio</title>
+  <meta name="description" content="Software Engineer focused on Backend systems, Cloud technologies, and Scalable APIs. View portfolio, projects, and credentials." />
+  <meta name="author" content="Nguyen Tan Thang" />
+  <meta name="keywords" content="Software Engineer, Backend Developer, Full Stack Developer, HCMUS, Java, Spring Boot, Next.js, Cloud" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Nguyen Tan Thang - Software Engineer | Portfolio" />
+  <meta property="og:description" content="Software Engineer focused on Backend systems, Cloud technologies, and Scalable APIs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thangak18.github.io/" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+</head>
+
+<body>
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress"></div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-logo" href="#home" aria-label="Portfolio Home">
+        <span>&lt;NT<span class="logo-highlight">Thang</span> /&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#home" class="is-active">Home</a>
+        <a href="#journey">Journey</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Credentials</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+
+        <!-- CLI Launcher in header -->
+        <button type="button" class="cli-toggle-btn" id="terminal-launcher-btn" aria-label="Open Interactive CLI Terminal" title="Open Interactive Terminal (Ctrl + K)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="menu-button" aria-label="Toggle mobile menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu">
+      <div>
+        <div class="mobile-menu-label">Navigation</div>
+        <nav aria-label="Mobile Navigation">
+          <a href="#home" class="is-active"><span>01</span> Home</a>
+          <a href="#journey"><span>02</span> Journey</a>
+          <a href="#experience"><span>03</span> Experience</a>
+          <a href="#skills"><span>04</span> Skills</a>
+          <a href="#projects"><span>05</span> Projects</a>
+          <a href="#certificates"><span>06</span> Credentials</a>
+          <a href="#community"><span>07</span> Community</a>
+          <a href="#contact"><span>08</span> Contact</a>
+        </nav>
+      </div>
+
+      <a href="assets/images/personal.jpg" target="_blank" class="mobile-resume-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+        Download Resume
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Shell -->
+  <main>
+    <!-- ====================================================================
+         1. Hero Section
+         ==================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      
+      <div class="portfolio-container">
+        <div class="hero-layout">
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-copy">
+            <div>
+              <p class="hero-overline" id="hero-overline">Software Engineering · HCMUS</p>
+              <h1 id="hero-headline">Hi, I'm <span>Nguyen Tan Thang.</span></h1>
+            </div>
+
+            <div class="hero-role">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+              <span id="hero-role-text">Software Engineer</span>
+            </div>
+
+            <p class="hero-description" id="hero-desc">
+              I build reliable backend systems and modern digital products, with a focus on scalable APIs, cloud technologies, and thoughtful full-stack experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a class="portfolio-button portfolio-button-primary" href="#projects">
+                View projects
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+
+              <a class="portfolio-button portfolio-button-secondary" href="immersive.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                Zen Space
+              </a>
+            </div>
+
+            <div class="hero-socials" aria-label="Social Links">
+              <a id="social-github" href="https://github.com/thangak18" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </a>
+
+              <a id="social-linkedin" href="https://www.linkedin.com/in/th%E1%BA%AFng-nguy%E1%BB%85n-598741283/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+
+              <a id="social-email" href="mailto:thangak18@gmail.com" aria-label="Email Contact" title="Send Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </a>
+
+              <span class="hero-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span id="hero-location-text">Ho Chi Minh City, Vietnam</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Portrait & Terminal Overlay -->
+          <div class="hero-visual" aria-label="Nguyen Tan Thang profile visual">
+            <div class="portrait-orbit portrait-orbit-one" aria-hidden="true"></div>
+            <div class="portrait-orbit portrait-orbit-two" aria-hidden="true"></div>
+
+            <div class="portrait-frame">
+              <div class="portrait-meta">
+                <span>HCMUS</span>
+                <span>EST. 2027</span>
+              </div>
+              <img src="assets/images/personal.jpg" alt="Nguyen Tan Thang" loading="eager" />
+              <div class="portrait-fade" aria-hidden="true"></div>
+            </div>
+
+            <!-- Terminal Box Preview -->
+            <div class="profile-terminal">
+              <div class="terminal-bar">
+                <div class="terminal-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span>profile.json</span>
+                <span class="terminal-status"><i></i> online</span>
+              </div>
+
+              <div class="terminal-code">
+                <p><b>"name"</b>: <span>"Nguyen Tan Thang"</span>,</p>
+                <p><b>"role"</b>: <span>"Software Engineer"</span>,</p>
+                <p><b>"focus"</b>: [<span>"Backend"</span>, <span>"Cloud"</span>],</p>
+                <p><b>"available"</b>: <em>true</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Highlight Focus Cards -->
+        <div class="focus-list" id="focus-list-container">
+          <!-- Dynamically populated from config.js -->
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a class="scroll-cue" href="#journey">
+          <span>Scroll to explore</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Profile Quick Strip
+         ==================================================================== -->
+    <div class="profile-strip">
+      <div class="portfolio-container">
+        <div class="profile-strip-grid" id="quick-strip-grid">
+          <!-- Dynamically populated from config.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         2. Journey / Academic Roadmap Section
+         ==================================================================== -->
+    <section id="journey" class="portfolio-section section-surface">
+      <div class="portfolio-container">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <svg class="kicker-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+            <span>Journey</span>
+          </div>
+          <h2>A foundation built one deliberate step at a time.</h2>
+          <p>My academic path is where software fundamentals, real projects, and a growing interest in cloud systems come together.</p>
+        </div>
+
+        <div class="journey-panel" data-glow-card="true">
+          <div class="journey-steps" id="journey-steps-container">
+            <!-- Dynamically populated from config.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. Work Experience Section
+         ==================================================================== -->
+    <section id="experience" class="portfolio-section">
+      <div class="portfolio-container">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <svg class="kicker-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+            <span>Experience</span>
+          </div>
+          <h2>Work Experience</h2>
+          <p>Professional roles, enterprise solutions, and technical projects.</p>
+        </div>
+
+        <div class="experience-layout">
+          <div class="experience-tabs" id="experience-tabs-container" role="tablist">
+            <!-- Dynamically populated from config.js -->
+          </div>
+
+          <div id="experience-card-container">
+            <!-- Dynamically populated from config.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. Capabilities / Skills Section
+         ==================================================================== -->
+    <section id="skills" class="portfolio-section section-surface">
+      <div class="portfolio-container">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <svg class="kicker-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+            <span>Capabilities</span>
+          </div>
+          <h2>The tools I use to move from idea to reliable system.</h2>
+          <p>A practical toolkit shaped by building, shipping, debugging, and learning across the stack.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid-container">
+          <!-- Dynamically populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. Projects / Selected Work Section
+         ==================================================================== -->
+    <section id="projects" class="portfolio-section">
+      <div class="portfolio-container">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <svg class="kicker-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+            <span>Selected Work</span>
+          </div>
+          <h2>Projects shaped by real technical decisions.</h2>
+          <p>A focused selection of systems where backend architecture, product thinking, and dependable delivery matter.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button type="button" class="filter-btn is-active" data-filter="all">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="backend">Backend &amp; Cloud</button>
+          <button type="button" class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button type="button" class="filter-btn" data-filter="security">Security &amp; Data</button>
+        </div>
+
+        <!-- Project Cards List -->
+        <div class="projects-list" id="projects-list-container">
+          <!-- Dynamically populated from config.js -->
+        </div>
+
+        <div class="section-cta">
+          <a class="portfolio-button portfolio-button-secondary" href="https://github.com/thangak18?tab=repositories" target="_blank" rel="noopener noreferrer">
+            Explore all repositories on GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. Credentials & Achievements Section
+         ==================================================================== -->
+    <section id="certificates" class="portfolio-section section-surface">
+      <div class="portfolio-container">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <svg class="kicker-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+            <span>Credentials</span>
+          </div>
+          <h2>Evidence of continuous learning and meaningful progress.</h2>
+          <p>Certificates build the foundation. Achievements show what happens when that learning is put into practice.</p>
+        </div>
+
+        <div class="credentials-layout">
+          <!-- Certifications Column -->
+          <div>
+            <div class="subsection-heading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+              <h3>Certifications</h3>
+              <span>03</span>
+            </div>
+
+            <div class="certificate-grid" id="certificates-list-container">
+              <!-- Dynamically populated from config.js -->
+            </div>
+          </div>
+
+          <!-- Achievements Column -->
+          <div>
+            <div class="subsection-heading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+              <h3>Achievements</h3>
+              <span>02</span>
+            </div>
+
+            <div class="achievement-list" id="achievements-list-container">
+              <!-- Dynamically populated from config.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. Community Section
+         ==================================================================== -->
+    <section id="community" class="portfolio-section">
+      <div class="portfolio-container">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <svg class="kicker-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+            <span>Community</span>
+          </div>
+          <h2>Engaging with developers &amp; giving back.</h2>
+          <p>Collaborative learning, developer groups, and active participation.</p>
+        </div>
+
+        <div class="community-grid" id="community-grid-container">
+          <!-- Dynamically populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. Contact Section
+         ==================================================================== -->
+    <section id="contact" class="portfolio-section section-surface">
+      <div class="portfolio-container">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <svg class="kicker-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+            <span>Let's Connect</span>
+          </div>
+          <h2>Have an opportunity or project in mind?</h2>
+          <p>I'm always open to discussing Software Engineering opportunities, backend systems, and innovative collaborations.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card-box">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </div>
+              <div class="contact-card-text">
+                <small>Email</small>
+                <strong>thangak18@gmail.com</strong>
+              </div>
+              <button type="button" id="copy-email-btn" class="portfolio-button portfolio-button-secondary" style="margin-left: auto; padding: 6px 12px; font-size: 0.8rem;">
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-card-text">
+                <small>Location</small>
+                <strong>Ho Chi Minh City, Vietnam</strong>
+              </div>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="contact-card-text">
+                <small>Working Status</small>
+                <strong>Open to Software Engineering Roles &amp; Projects</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form" data-glow-card="true">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Johnson" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="e.g. alex@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="portfolio-button portfolio-button-primary" style="width: 100%;">
+              Send Message
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="portfolio-container footer-inner">
+      <p class="footer-copy">
+        &copy; 2026 <strong>Nguyen Tan Thang</strong>. Built with precision and passion.
+      </p>
+
+      <div class="footer-links">
+        <a href="https://github.com/thangak18" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/th%E1%BA%AFng-nguy%E1%BB%85n-598741283/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://leetcode.com/u/thangnguyen23/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+        <a href="immersive.html">Zen Space</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       General Modal Dialog for Certifications & Achievements
+       ==================================================================== -->
+  <div class="modal-backdrop" id="general-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-title">Credential Details</h3>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       Interactive CLI Terminal Modal
+       ==================================================================== -->
+  <div class="terminal-modal" id="terminal-modal" role="dialog" aria-label="Developer CLI Terminal">
+    <div class="terminal-modal-header">
+      <div class="terminal-dots">
+        <span></span><span></span><span></span>
+      </div>
+      <span>thang@shell: ~ (interactive CLI)</span>
+      <button type="button" id="terminal-close-btn" class="modal-close-btn" aria-label="Close terminal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="terminal-output" id="terminal-cli-output">
+      <div style="color: var(--accent-cyan); font-weight: bold; margin-bottom: 8px;">
+        Welcome to Nguyen Tan Thang's Terminal CLI v2.0
+      </div>
+      <div style="color: var(--text-muted); margin-bottom: 12px;">
+        Type <span style="color: var(--accent-cyan);">help</span> to view available commands or try <span style="color: var(--accent-cyan);">skills</span>, <span style="color: var(--accent-cyan);">projects</span>, <span style="color: var(--accent-cyan);">matrix</span>, <span style="color: #f43f5e;">sudo hire-me</span>.
+      </div>
+    </div>
+
+    <div class="terminal-input-row">
+      <span class="terminal-prompt">&gt;</span>
+      <input type="text" id="terminal-cli-input" class="terminal-input" placeholder="Type command..." autocomplete="off" spellcheck="false" />
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

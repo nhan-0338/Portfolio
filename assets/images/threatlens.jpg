@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tl-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="50%" stop-color="#101f42"/>
+      <stop offset="100%" stop-color="#090d1a"/>
+    </linearGradient>
+    <linearGradient id="tl-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <radialGradient id="tl-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#tl-bg)"/>
+  <circle cx="400" cy="250" r="220" fill="url(#tl-glow)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.15" stroke="#4facfe" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="500"/>
+    <line x1="320" y1="0" x2="320" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="640" y1="0" x2="640" y2="500"/>
+  </g>
+
+  <!-- Cyber Shield & Radar UI -->
+  <g transform="translate(400, 210)">
+    <!-- Radar Rings -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#00f2fe" stroke-width="1" stroke-dasharray="6,6" opacity="0.4"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#00f2fe" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Shield Icon -->
+    <path d="M 0 -45 L 35 -25 L 35 15 C 35 40 0 55 0 55 C 0 55 -35 40 -35 15 L -35 -25 Z" fill="#102a54" stroke="#00f2fe" stroke-width="3"/>
+    <path d="M -15 -5 L -3 8 L 18 -15" fill="none" stroke="#00f2fe" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="400" y="380" font-family="'Space Grotesk', system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+    THREATLENS
+  </text>
+  <text x="400" y="415" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#00f2fe" text-anchor="middle" letter-spacing="1">
+    SECURITY &amp; VULNERABILITY PLATFORM
+  </text>
+
+  <!-- Status badges -->
+  <g transform="translate(40, 40)">
+    <rect width="110" height="28" rx="14" fill="#00f2fe" fill-opacity="0.15" stroke="#00f2fe" stroke-width="1"/>
+    <circle cx="18" cy="14" r="4" fill="#00f2fe"/>
+    <text x="32" y="19" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#00f2fe" font-weight="600">LIVE SEC-OPS</text>
+  </g>
+</svg>

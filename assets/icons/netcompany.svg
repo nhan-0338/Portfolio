@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40">
+  <text x="10" y="27" font-family="'Space Grotesk', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#00e5ff" letter-spacing="1">
+    net<tspan fill="#ffffff">company</tspan>
+  </text>
+  <circle cx="180" cy="20" r="4" fill="#00e5ff" />
+</svg>
