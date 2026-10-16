@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>CV HỒ ĐỨC NHÂN - TIẾNG VIỆT (1 TRANG)</title>
+<style>
+  @page {
+    size: 595.28pt 841.89pt;
+    margin: 0;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Times New Roman", Times, "Times-Roman", serif;
+    color: #000000;
+    background-color: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    text-rendering: geometricPrecision;
+  }
+
+  .cv-page {
+    width: 595.28pt;
+    height: 841.89pt;
+    position: relative;
+    padding: 16pt 38pt 14pt 38pt;
+    overflow: hidden;
+  }
+
+  /* Header Section */
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 8pt;
+  }
+
+  .avatar-container {
+    width: 82pt;
+    height: 108pt;
+    flex-shrink: 0;
+    margin-right: 12pt;
+    border-radius: 9pt;
+    overflow: hidden;
+    background: #eaeaea;
+  }
+
+  .avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .header-content {
+    flex-grow: 1;
+    padding-top: 4pt;
+  }
+
+  .candidate-name {
+    font-size: 13.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    line-height: 15pt;
+    margin-bottom: 3pt;
+    border-bottom: 0.75pt solid #000000;
+    padding-bottom: 2.5pt;
+  }
+
+  .contact-info {
+    font-size: 10pt;
+    line-height: 13pt;
+    margin-bottom: 4pt;
+  }
+
+  .contact-info a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .objective-text {
+    font-size: 9pt;
+    line-height: 11.8pt;
+    text-align: justify;
+  }
+
+  /* Section */
+  .section {
+    margin-bottom: 7pt;
+  }
+
+  .section-heading {
+    font-size: 11pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    border-bottom: 0.75pt solid #000000;
+    padding-bottom: 1.5pt;
+    margin-bottom: 4pt;
+  }
+
+  /* Job block */
+  .job-block {
+    margin-bottom: 5pt;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1pt;
+  }
+
+  .job-role {
+    font-size: 10.5pt;
+    font-weight: bold;
+  }
+
+  .job-period {
+    font-size: 9.5pt;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .job-org {
+    font-size: 9.5pt;
+    font-style: italic;
+    margin-bottom: 2.5pt;
+  }
+
+  /* Bullet list */
+  .bullet-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .bullet-item {
+    position: relative;
+    padding-left: 9pt;
+    font-size: 9pt;
+    line-height: 11.8pt;
+    margin-bottom: 2pt;
+    text-align: justify;
+  }
+
+  .bullet-item::before {
+    content: "";
+    position: absolute;
+    left: 0.5pt;
+    top: 4.8pt;
+    width: 2.2pt;
+    height: 2.2pt;
+    background-color: #000000;
+  }
+
+  /* Education */
+  .edu-row-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1pt;
+  }
+
+  .edu-school {
+    font-size: 10.5pt;
+    font-weight: bold;
+  }
+
+  .edu-grad {
+    font-size: 10pt;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .edu-line {
+    font-size: 9.5pt;
+    line-height: 12.5pt;
+  }
+
+  /* Achievements */
+  .achieve-item {
+    position: relative;
+    padding-left: 9pt;
+    font-size: 9pt;
+    line-height: 12pt;
+    margin-bottom: 1.8pt;
+    text-align: justify;
+  }
+
+  .achieve-item::before {
+    content: "";
+    position: absolute;
+    left: 0.5pt;
+    top: 4.8pt;
+    width: 2.2pt;
+    height: 2.2pt;
+    background-color: #000000;
+  }
+
+  .achieve-subitem {
+    padding-left: 9pt;
+    font-size: 8.5pt;
+    line-height: 11pt;
+    font-style: italic;
+    margin-top: -0.5pt;
+    margin-bottom: 1.8pt;
+    text-align: justify;
+  }
+
+  /* Skills & Tools in 1-page */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2pt;
+  }
+
+  .skill-row {
+    position: relative;
+    padding-left: 9pt;
+    font-size: 9pt;
+    line-height: 12pt;
+    text-align: justify;
+  }
+
+  .skill-row::before {
+    content: "";
+    position: absolute;
+    left: 0.5pt;
+    top: 4.8pt;
+    width: 2.2pt;
+    height: 2.2pt;
+    background-color: #000000;
+  }
+</style>
+</head>
+<body>
+
+<div class="cv-page">
+
+  <!-- Header -->
+  <div class="header-wrapper">
+    <div class="avatar-container">
+      <img src="assets/avatar_hoducnhan.jpg" alt="Hồ Đức Nhân">
+    </div>
+    <div class="header-content">
+      <div class="candidate-name">HỒ ĐỨC NHÂN</div>
+      <div class="contact-info">
+        hoducnhan240905@gmail.com &nbsp;|&nbsp; 0338 114 890 &nbsp;|&nbsp; <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> &nbsp;|&nbsp; TP. Hồ Chí Minh
+      </div>
+      <div class="objective-text">
+        Tìm kiếm vị trí thực tập thuộc khối Kế toán - Tài chính với định hướng phát triển dài hạn hướng tới hoạch định vận hành và quản trị tài chính doanh nghiệp. Mục tiêu nâng cao năng lực chuyên môn trong việc lập ngân sách, dự báo, phân tích hiệu quả hoạt động và hỗ trợ ra quyết định tài chính. Luôn đề cao tính chính xác của số liệu, kiểm soát nội bộ và báo cáo đáng tin cậy như nền tảng cốt lõi cho công tác hoạch định và phân tích.
+      </div>
+    </div>
+  </div>
+
+  <!-- KINH NGHIỆM -->
+  <div class="section">
+    <div class="section-heading">KINH NGHIỆM</div>
+
+    <!-- Hesman -->
+    <div class="job-block">
+      <div class="job-header">
+        <span class="job-role">Thực tập sinh Kiểm soát Nội bộ - Kiểm toán &amp; Đối soát</span>
+        <span class="job-period">Tháng 10/2025 – Tháng 06/2026</span>
+      </div>
+      <div class="job-org">Công ty Cổ phần Hesman Group | Chi nhánh miền Nam (TP. Hồ Chí Minh)</div>
+      <div class="bullet-list">
+        <div class="bullet-item">Kiểm tra và xác thực <strong>hơn 500 bản ghi giao dịch mỗi ngày</strong> bằng cách đối chiếu dữ liệu hệ thống với chứng từ kế toán, truy vết các bút toán bất thường và sai lệch kiểm soát về chứng từ gốc, củng cố độ tin cậy của thông tin tài chính - vận hành.</div>
+        <div class="bullet-item">Thực hiện kiểm kê và đối soát hàng tồn kho trên <strong>3 chuỗi bán lẻ - Shopdunk, Samcenter, Xiaomi và 25 cửa hàng miền Nam</strong>, đối soát số dư sổ sách với thực tế kiểm kê, làm rõ chênh lệch và đề xuất điều chỉnh kịp thời.</div>
+        <div class="bullet-item">Theo dõi, lập hồ sơ và xử lý <strong>hơn 50 trường hợp ngoại lệ kiểm soát nội bộ mỗi tháng</strong>, phối hợp với các phòng ban liên quan để xác định biện pháp khắc phục và giải quyết dứt điểm trước thời hạn báo cáo.</div>
+      </div>
+    </div>
+
+    <!-- Vietcombank -->
+    <div class="job-block" style="margin-bottom: 2pt;">
+      <div class="job-header">
+        <span class="job-role">Thực tập sinh Quan hệ Khách hàng - Hỗ trợ Thẩm định Tín dụng</span>
+        <span class="job-period">Tháng 09/2024 – Tháng 12/2024</span>
+      </div>
+      <div class="job-org">Phòng Giao dịch Đô Thành - Vietcombank | TP. Hồ Chí Minh</div>
+      <div class="bullet-list">
+        <div class="bullet-item">Tích lũy kinh nghiệm trong <strong>thẩm tra thông tin tài chính, đánh giá năng lực trả nợ</strong> và nắm vững các tiêu chí cốt lõi trong thẩm định khách hàng cá nhân và doanh nghiệp.</div>
+        <div class="bullet-item">Hỗ trợ <strong>rà soát và hoàn thiện hồ sơ tín dụng khách hàng</strong>, kiểm tra tính đầy đủ, hợp lệ của chứng từ trước khi đưa vào quy trình xử lý nội bộ.</div>
+        <div class="bullet-item"><strong>Theo dõi sát sao tiến độ hồ sơ khách hàng</strong>, phối hợp cùng Chuyên viên RM đảm bảo hồ sơ được phê duyệt đúng thời hạn.</div>
+        <div class="bullet-item">Vinh dự nhận danh hiệu <strong>Thực tập sinh Xuất sắc nhất (Best Intern) Quý 3 năm 2024</strong>.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HỌC VẤN -->
+  <div class="section">
+    <div class="section-heading">HỌC VẤN</div>
+    <div class="edu-row-title">
+      <span class="edu-school">Đại học Kinh tế Thành phố Hồ Chí Minh (UEH)</span>
+      <span class="edu-grad">Tốt nghiệp tháng 03/2027</span>
+    </div>
+    <div class="edu-line"><strong>Cử nhân Tài chính Quốc tế &nbsp;|&nbsp; GPA: 3.8/ 4.0</strong></div>
+    <div class="edu-line"><strong>Chứng chỉ ACCA:</strong> Miễn thi các môn F1, F2, F3; đang chuẩn bị thi môn Báo cáo Tài chính (FR/F7)</div>
+    <div class="edu-line"><strong>Khóa đào tạo bổ trợ:</strong> Mô hình hóa Tài chính (Financial Modeling), Phân tích Báo cáo Tài chính, Phân tích Thị trường Vĩ mô</div>
+  </div>
+
+  <!-- THÀNH TÍCH -->
+  <div class="section">
+    <div class="section-heading">THÀNH TÍCH</div>
+    <div class="achieve-item"><strong>Học bổng Khuyến khích Học tập Xuất sắc</strong> 3 năm liên tiếp 2024, 2025, 2026.</div>
+    <div class="achieve-item"><strong>Đại diện Sinh viên Tài chính Quốc tế UEH</strong> tham gia Kiểm định Chất lượng Giáo dục FIBAA (Châu Âu) 2026.</div>
+    <div class="achieve-item"><strong>Giải Nhất (Giải A)</strong> tại Giải thưởng Nghiên cứu Khoa học Sinh viên Kế toán &amp; Kiểm toán lần thứ 7 (SRAA 2025).</div>
+    <div class="achieve-subitem"><strong>Đề tài nghiên cứu:</strong> <em>Vạch trần Quản trị Lợi nhuận trong Kỷ nguyên Số: Vai trò của Tính Thận trọng Kế toán tại TP.HCM</em></div>
+    <div class="achieve-item"><strong>Giải Nhì</strong> Cuộc thi Thử thách Kinh tế Vĩ mô 2025 &nbsp;|&nbsp; <strong>Giải Nhì</strong> Cuộc thi Tranh biện Sinh viên Kinh tế UEH 2025.</div>
+    <div class="achieve-item"><strong>Giải Ba</strong> Cuộc thi Học thuật Ngân hàng E-Banker lần 5 &nbsp;|&nbsp; <strong>Giải Ba</strong> Thử thách Kinh tế Vi mô 2024.</div>
+  </div>
+
+  <!-- KỸ NĂNG & CÔNG CỤ -->
+  <div class="section" style="margin-bottom: 0;">
+    <div class="section-heading">KỸ NĂNG &amp; CÔNG CỤ</div>
+    <div class="skills-grid">
+      <div class="skill-row"><strong>Ngoại ngữ:</strong> Tiếng Anh (<strong>IELTS 7.5 Overall</strong>) – Tiếng Việt</div>
+      <div class="skill-row"><strong>Tài chính &amp; Kế toán:</strong> Phân tích Báo cáo Tài chính – Nguyên lý Báo cáo Tài chính – Quản trị Ngân sách &amp; Dự báo</div>
+      <div class="skill-row"><strong>Kiểm soát Nội bộ &amp; Kiểm toán:</strong> Kiểm tra Giao dịch – Đối soát Dữ liệu – Kiểm kê Hàng tồn kho – Thử nghiệm Kiểm soát</div>
+      <div class="skill-row"><strong>Dữ liệu &amp; Báo cáo:</strong> Phân tích Dữ liệu lớn – Báo cáo Dashboard – Trực quan hóa Dữ liệu Tài chính (Power BI)</div>
+      <div class="skill-row"><strong>Tin học &amp; Phần mềm:</strong> Microsoft Office (<strong>Chứng chỉ MOS</strong>) – Stata 17 – Python – Prompt Engineering (ChatGPT, Claude)</div>
+      <div class="skill-row"><strong>Kỹ năng Mềm:</strong> Soạn thảo Báo cáo Phân tích – Điều phối Liên phòng ban – Thuyết trình – <strong>Giải Ba viết “Tự hào UEH”</strong></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
